@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+    <title> University of Akron | GWA</title>
+<style>
+
+body{
+font-family: Georgia, 'Times New Roman', Times, serif;
+background-color: rgb(153, 136, 112);
+text-align: center;
+}
+
+.container{
+background-color: rgb(186, 165, 139);
+width: 820px;
+text-align: center;
+}
+
+label{
+    background-color: rgb(116, 102, 82);
+    color: rgb(181, 181, 181);
+    
+}
+
+input{
+    border-radius: 30px;
+}
+
+p{
+    text-align: left;
+}
+
+</style>
+
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-sm bg-secondary navbar-dark fixed-top">
+
+
+         <div class="container-fluid">
+       <a class="navbar-brand" href="#"> University of Akron
+        </a>
+   
+    <div class="collapse navbar-collapse">  
+    
+
+     
+        <ul class="navbar-nav me-auto"> 
+            <li class="nav-item"> <a class="nav-link" href="index(2).html"> Home </a></li>
+
+            <li class="nav-item"> <a class="nav-link" href="index.html"> GWA calculator </a></li>
+
+            <li class="nav-item"> <a class="nav-link" href="index(3).html"> Org application</a></li>
+    </ul>
+     
+         </div>
+     </nav>
+
+<br>
+<br>
+
+<div class="container p-5 mt-5 text center rounded-3">
+
+    <h1><b>Student GWA calculator</b></h1>
+<br>
+<hr>
+<!-- Student Info -->
+    <label> First Name: </label>
+     <input type ="text" id="Fname" placeholder="Insert First Name">
+
+     <br>
+     <br>
+
+     <label> Last Name: </label>
+     <input type ="text" id="Lname" placeholder="Insert Last Name">
+
+
+
+<br>
+<hr>
+
+<!-- Grades -->
+
+
+<p><b>Enter Your Grades:</b></p>
+
+
+    <label> Science: </label>
+     <input type ="number" id="Science" placeholder="Insert Grade">
+
+
+     <label> Math: </label>
+     <input type ="number" id="Math" placeholder="Insert Grade">
+     
+     <br>
+     <br>
+
+     
+    <label> English: </label>
+     <input type ="number" id="English" placeholder="Insert Grade">
+
+
+     <label> Filipino: </label>
+     <input type ="number" id="Filipino" placeholder="Insert Grade"> 
+
+     <br>
+     <br>
+
+     
+    <label> ICT: </label>
+     <input type ="number" id="ICT" placeholder="Insert Grade">
+
+
+     <label> PE: </label>
+     <input type ="number" id="PE" placeholder="Insert Grade"> 
+
+    <hr>
+
+<!-- button -->
+
+
+            <div class="flex-grow-1 text-center">
+                <button type="submit" class="btn" py-click="Calculate" style="background-color: rgb(248, 248, 248); color: black;">
+                    Submit
+                </button>
+            </div>
+<br>
+<hr>
+
+            <div class="container-sm" style="text-align: left; border: 2px solid rgb(186, 165, 139); border-radius: 10px; background-color: rgb(186, 165, 139);">
+                <h4 id="name">Your Name will appear here.</h4>
+                <p id="grades">Your Subject Grades will Appear here.</p>
+                <h4 id="average">Your total average will appear here.</h4>
+            </div>
+   
+   
+   
+        </div>
+        </div>
+
+ 
+    <py-script src="main.py"></py-script>
+
+</body>
+</html>
